@@ -10,18 +10,55 @@ html(lang="en")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css")
         link(rel="stylesheet" href="./css/main.css")
     body 
-        sidebar.sidebar
-            h1.sidebar__title
-        header 
-            p.greeting Hello Evano,&#128075;&#127996;
+        aside.sidemenu
+            div
+                h1.sidemenu__title Dashboard
+                p v.01
+            nav
+                ul
+                    li
+                        a(href="")
+                            svg
+                                use(href=".src/icons/#") 
+                            p Dashboard
+                    li
+                        a(href="")
+                            svg 
+                                use(href=".src/icons/#")
+                            p Product
+                    li
+                        a(href="")
+                            svg 
+                                use(href=".src/icons/#")
+                            p Customers
+                    li
+                        a(href="")
+                            svg 
+                                use(href=".src/icons/#")
+                            p Income
+                    li
+                        a(href="")
+                            svg 
+                                use(href=".src/icons/#")
+                            p Promote
+                    li
+                        a(href="")
+                            svg 
+                                use(href=".src/icons/#")
+                            p Help
+
+            
         main
-            section 
-                .customers
-                    .customers__head
-                        .customers__title-wrap
-                            h2.customers__title All Customers
-                            p.customers__subtitle Active Members
-                        .customers__searchbar-wrap
-                            input(type="text" placeholder="search").customers__searchbar
-                            svg.customers__searchbar-icon
-                                use(href='./assets/icons.svg#icon-search')
+            .content
+                header
+                    p.greeting Hello Evano,&#128075;&#127996;
+                section 
+                    .customers
+                        .customers__head
+                            .customers__title-wrap
+                                h2.customers__title All Customers
+                                p.customers__subtitle Active Members
+                            .customers__searchbar-wrap
+                                input(type="text" placeholder="search").customers__searchbar
+                                svg.customers__searchbar-icon
+                                    use(href='./assets/icons.svg#icon-search')

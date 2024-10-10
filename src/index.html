@@ -11,29 +11,68 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body> 
-    <sidebar class="sidebar">
-      <h1 class="sidebar__title"></h1>
-    </sidebar>
-    <header> 
-      <p class="greeting">Hello Evano,&#128075;&#127996;</p>
-    </header>
-    <main>
-      <section> 
-        <div class="customers">
-          <div class="customers__head">
-            <div class="customers__title-wrap">
-              <h2 class="customers__title">All Customers</h2>
-              <p class="customers__subtitle">Active Members</p>
-            </div>
-            <div class="customers__searchbar-wrap">
-              <input class="customers__searchbar" type="text" placeholder="search">
-              <svg class="customers__searchbar-icon">
-                <use href="./assets/icons.svg#icon-search"></use>
+    <aside class="sidemenu">
+      <div>
+        <h1 class="sidemenu__title">Dashboard</h1>
+        <p>v.01</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">
+              <svg>
+                <use href=".src/icons/#"> </use>
               </svg>
+              <p>Dashboard</p></a></li>
+          <li><a href="">
+              <svg> 
+                <use href=".src/icons/#"></use>
+              </svg>
+              <p>Product</p></a></li>
+          <li><a href="">
+              <svg> 
+                <use href=".src/icons/#"></use>
+              </svg>
+              <p>Customers</p></a></li>
+          <li><a href="">
+              <svg> 
+                <use href=".src/icons/#"></use>
+              </svg>
+              <p>Income</p></a></li>
+          <li><a href="">
+              <svg> 
+                <use href=".src/icons/#"></use>
+              </svg>
+              <p>Promote</p></a></li>
+          <li><a href="">
+              <svg> 
+                <use href=".src/icons/#"></use>
+              </svg>
+              <p>Help</p></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="content">
+        <header>
+          <p class="greeting">Hello Evano,&#128075;&#127996;</p>
+        </header>
+        <section> 
+          <div class="customers">
+            <div class="customers__head">
+              <div class="customers__title-wrap">
+                <h2 class="customers__title">All Customers</h2>
+                <p class="customers__subtitle">Active Members</p>
+              </div>
+              <div class="customers__searchbar-wrap">
+                <input class="customers__searchbar" type="text" placeholder="search">
+                <svg class="customers__searchbar-icon">
+                  <use href="./assets/icons.svg#icon-search"></use>
+                </svg>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>

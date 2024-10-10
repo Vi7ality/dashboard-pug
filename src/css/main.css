@@ -68,8 +68,19 @@ p {
   margin-bottom: 0;
 }
 
-.sidebar {
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 306px;
+  height: 100vh;
   padding: 36px 28px 72px 28px;
+  background-color: var(--primary-white-color);
+}
+
+.content {
+  margin-left: 306px;
+  padding: 41px 95px 41px 71px;
 }
 
 .greeting {
