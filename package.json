@@ -4,10 +4,10 @@
     "parcel-reporter-clean-dist": "^1.0.4"
   },
   "scripts": {
-    "start": "parcel src/index.pug",
+    "start": "parcel src/index.html",
     "build:pug": "pug src/pug/index.pug --out src --pretty",
-    "watch": "parcel watch src/index.html",
-    "build": "parcel build src/index.pug"
+    "watch": "pug -w src/pug/index.pug --out src --pretty",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"
