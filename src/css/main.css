@@ -68,6 +68,10 @@ p {
   margin-bottom: 0;
 }
 
+.sidebar {
+  padding: 36px 28px 72px 28px;
+}
+
 .greeting {
   font-weight: 500;
   font-size: 24px;
@@ -111,6 +115,11 @@ p {
   border: none;
   border-radius: 10px;
   background-color: var(--muted-background-color);
+}
+
+.customers__searchbar::placeholder {
+  font-size: 12px;
+  color: var(--muted-text-color);
 }
 
 .customers__searchbar-icon {
