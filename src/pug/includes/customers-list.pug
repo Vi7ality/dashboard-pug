@@ -1,0 +1,95 @@
+- 
+    const customersList = [
+        {
+            "firstName": "Jane",
+            "lastName": "Cooper",
+            "company": "Microsoft",
+            "phoneNumber": "(225) 555-0118",
+            "email": "jane@microsoft.com",
+            "country": "United States",
+            "status": "Active"
+        },
+        {
+            "firstName": "Floyd",
+            "lastName": "Miles",
+            "company": "Yahoo",
+            "phoneNumber": "(205) 555-0100",
+            "email": "floyd@yahoo.com",
+            "country": "Kiribati",
+            "status": "Inactive"
+        },
+        {
+            "firstName": "Ronald",
+            "lastName": "Richards",
+            "company": "Adobe",
+            "phoneNumber": "(302) 555-0107",
+            "email": "ronald@adobe.com",
+            "country": "Israel",
+            "status": "Inactive"
+        },
+        {
+            "firstName": "Marvin",
+            "lastName": "McKinney",
+            "company": "Tesla",
+            "phoneNumber": "(252) 555-0126",
+            "email": "marvin@tesla.com",
+            "country": "Iran",
+            "status": "Active"
+        },
+        {
+            "firstName": "Jerome",
+            "lastName": "Bell",
+            "company": "Google",
+            "phoneNumber": "(629) 555-0129",
+            "email": "jerome@google.com",
+            "country": "Réunion",
+            "status": "Active"
+        },
+        {
+            "firstName": "Kathryn",
+            "lastName": "Murphy",
+            "company": "Microsoft",
+            "phoneNumber": "(406) 555-0120",
+            "email": "kathryn@microsoft.com",
+            "country": "Curaçao",
+            "status": "Active"
+        },
+        {
+            "firstName": "Jacob",
+            "lastName": "Jones",
+            "company": "Yahoo",
+            "phoneNumber": "(208) 555-0112",
+            "email": "jacob@yahoo.com",
+            "country": "Brazil",
+            "status": "Active"
+        },
+        {
+            "firstName": "Kristin",
+            "lastName": "Watson",
+            "company": "Facebook",
+            "phoneNumber": "(704) 555-0127",
+            "email": "kristin@facebook.com",
+            "country": "Åland Islands",
+            "status": "Inactive"
+        }
+    ]
+
+table
+    thead
+        tr
+            th Customer Name
+            th Company 
+            th Phone Number 
+            th Email
+            th Country 
+            th Status
+    tbody.customers-list 
+
+        each customer in customersList
+            tr.customer 
+                td.customer__fullname= customer.firstName + ' ' + customer.lastName 
+                td.customer___company= customer.company 
+                td.customer__phone= customer.phoneNumber
+                td.customer___email= customer.email
+                td.customer___country= customer.country
+                td.customer___status= customer.status

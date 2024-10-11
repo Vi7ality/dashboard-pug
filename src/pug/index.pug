@@ -12,7 +12,9 @@ html(lang="en")
     body 
         aside.sidemenu
             div
-                h1.sidemenu__title Dashboard
+                svg
+                    use(href="./assets/icons#icon-setting")
+                h1.sidemenu__title Dashboard 
                 p v.01
             nav
                 ul
@@ -62,3 +64,4 @@ html(lang="en")
                                 input(type="text" placeholder="search").customers__searchbar
                                 svg.customers__searchbar-icon
                                     use(href='./assets/icons.svg#icon-search')
+                        include includes/customers-list
