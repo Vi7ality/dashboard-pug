@@ -11,12 +11,14 @@ html(lang="en")
         link(rel="stylesheet" href="./css/main.css")
     body 
         aside.sidemenu
-            div
-                svg
-                    use(href="./assets/icons#setting")
-                h1.sidemenu__title Dashboard 
-                p v.01
+            .sidemenu__title-wrap
+                svg.sidemenu__icon
+                    use(href="./assets/icons.svg#icon-setting")
+                div.title__flex-wrap
+                    h1.sidemenu__title Dashboard 
+                    p.sidemenu__ver v.01
             include includes/nav-bar
+            include includes/user
 
             
         main

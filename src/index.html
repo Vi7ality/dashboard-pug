@@ -12,47 +12,73 @@
   </head>
   <body> 
     <aside class="sidemenu">
-      <div>
-        <svg>
-          <use href="./assets/icons#setting"></use>
+      <div class="sidemenu__title-wrap">
+        <svg class="sidemenu__icon">
+          <use href="./assets/icons.svg#icon-setting"></use>
         </svg>
-        <h1 class="sidemenu__title">Dashboard </h1>
-        <p>v.01</p>
+        <div class="title__flex-wrap">
+          <h1 class="sidemenu__title">Dashboard </h1>
+          <p class="sidemenu__ver">v.01</p>
+        </div>
       </div>
       <nav class="navbar">
         <ul class="navbar__list">
                 <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-key-square"></use>
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-key-square"></use>
                     </svg>
-                    <p class="navbar__name">Dashboard</p></a></li>
+                    <p class="navbar__name">Dashboard</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
                 <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-d-square"></use>
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-d-square"></use>
                     </svg>
-                    <p class="navbar__name">Product</p></a></li>
+                    <p class="navbar__name">Product</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
+                <li class="navbar__item--active"><a class="navbar__link" href="">
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-user-square"></use>
+                    </svg>
+                    <p class="navbar__name--active">Customers</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
                 <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-user-square"></use>
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-wallet-money"></use>
                     </svg>
-                    <p class="navbar__name">Customers</p></a></li>
+                    <p class="navbar__name">Income</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
                 <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-wallet-money"></use>
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-discount-shape"></use>
                     </svg>
-                    <p class="navbar__name">Income</p></a></li>
+                    <p class="navbar__name">Promote</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
                 <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-discount-shape"></use>
+                    <svg class="navbar__icon">
+                      <use href="./assets/icons.svg#icon-message-question"></use>
                     </svg>
-                    <p class="navbar__name">Promote</p></a></li>
-                <li class="navbar__item"><a class="navbar__link" href="">
-                    <svg class="navbar__icon" width="24" height="24">
-                      <use href="./assets/icons/#icon-message-question"></use>
-                    </svg>
-                    <p class="navbar__name">Help</p></a></li>
+                    <p class="navbar__name">Help</p>
+                    <svg class="navbar__arrow-icon">
+                      <use href="./assets/icons.svg#icon-chevron-right"></use>
+                    </svg></a></li>
         </ul>
       </nav>
+      <div class="user__container"> <img src="./assets/user-photo.jpg" alt="user photo" width="42" height="42">
+        <div class="user__name-role-wrap"> 
+          <p class="user__name">Evano</p>
+          <p class="user__role">Project manager</p>
+        </div>
+      </div>
     </aside>
     <main>
       <div class="content">

@@ -1,9 +1,21 @@
-mixin navLink(name, href, iconName)
-    li.navbar__item
-        a(href=href).navbar__link
-            svg(width="24", height="24").navbar__icon
-                use(href=`./assets/icons/#${iconName}`)
-            p.navbar__name= name
+mixin navLink(name, href, iconName, active=false)
+    if active
+        li.navbar__item--active
+             a(href=href).navbar__link
+                svg.navbar__icon
+                    use(href=`./assets/icons.svg#${iconName}`)
+                p.navbar__name--active= name
+                svg.navbar__arrow-icon
+                    use(href="./assets/icons.svg#icon-chevron-right")
+
+    else
+        li.navbar__item
+            a(href=href).navbar__link
+                svg.navbar__icon
+                    use(href=`./assets/icons.svg#${iconName}`)
+                p.navbar__name= name
+                svg.navbar__arrow-icon
+                    use(href="./assets/icons.svg#icon-chevron-right")
 
 
 
@@ -12,17 +24,7 @@ nav.navbar
     ul.navbar__list
         +navLink('Dashboard', '', 'icon-key-square')
         +navLink('Product', '', 'icon-d-square')
-        +navLink('Customers', '', 'icon-user-square')
+        +navLink('Customers', '', 'icon-user-square', active=true)
         +navLink('Income', '', 'icon-wallet-money')
         +navLink('Promote', '', 'icon-discount-shape')
         +navLink('Help', '', 'icon-message-question')
-        //- li
-        //-     a(href="")
-        //-         svg 
-        //-             use(href=".src/icons/#")
-        //-         p Promote
-        //- li
-        //-     a(href="")
-        //-         svg 
-        //-             use(href=".src/icons/#")
-        //-         p Help
