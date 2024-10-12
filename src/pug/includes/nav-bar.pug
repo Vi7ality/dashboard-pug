@@ -1,0 +1,28 @@
+mixin navLink(name, href, iconName)
+    li.navbar__item
+        a(href=href).navbar__link
+            svg(width="24", height="24").navbar__icon
+                use(href=`./assets/icons/#${iconName}`)
+            p.navbar__name= name
+
+
+
+
+nav.navbar
+    ul.navbar__list
+        +navLink('Dashboard', '', 'icon-key-square')
+        +navLink('Product', '', 'icon-d-square')
+        +navLink('Customers', '', 'icon-user-square')
+        +navLink('Income', '', 'icon-wallet-money')
+        +navLink('Promote', '', 'icon-discount-shape')
+        +navLink('Help', '', 'icon-message-question')
+        //- li
+        //-     a(href="")
+        //-         svg 
+        //-             use(href=".src/icons/#")
+        //-         p Promote
+        //- li
+        //-     a(href="")
+        //-         svg 
+        //-             use(href=".src/icons/#")
+        //-         p Help

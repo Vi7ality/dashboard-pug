@@ -78,6 +78,25 @@ p {
   background-color: var(--primary-white-color);
 }
 
+.navbar {
+}
+
+.navbar__list {
+}
+
+.navbar__item {
+}
+
+.navbar__link {
+  display: flex;
+}
+
+.navbar__icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
 .content {
   margin-left: 306px;
   padding: 41px 95px 41px 71px;
