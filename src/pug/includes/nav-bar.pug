@@ -2,18 +2,20 @@ mixin navLink(name, href, iconName, active=false)
     if active
         li.navbar__item--active
              a(href=href).navbar__link
-                svg.navbar__icon
-                    use(href=`./assets/icons.svg#${iconName}`)
-                p.navbar__name--active= name
+                .navbar__name-flexwrap
+                    svg.navbar__icon
+                        use(href=`./assets/icons.svg#${iconName}`)
+                    p.navbar__name--active= name
                 svg.navbar__arrow-icon
                     use(href="./assets/icons.svg#icon-chevron-right")
 
     else
         li.navbar__item
             a(href=href).navbar__link
-                svg.navbar__icon
-                    use(href=`./assets/icons.svg#${iconName}`)
-                p.navbar__name= name
+                .navbar__name-flexwrap
+                    svg.navbar__icon
+                        use(href=`./assets/icons.svg#${iconName}`)
+                    p.navbar__name= name
                 svg.navbar__arrow-icon
                     use(href="./assets/icons.svg#icon-chevron-right")
 

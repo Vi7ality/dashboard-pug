@@ -97,7 +97,7 @@ p {
 
 .title__flex-wrap {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   gap: 4px;
 }
 
@@ -123,13 +123,11 @@ p {
 }
 
 .navbar__item {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px;
 }
 
 .navbar__item--active {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px;
   background-color: var(--accent-background-color);
   border-radius: 8px;
 }
@@ -137,14 +135,19 @@ p {
 .navbar__link {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__name-flexwrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .navbar__icon {
   display: block;
   width: 24px;
   height: 24px;
-
-  margin-right: 14px;
 }
 
 .navbar__name {
