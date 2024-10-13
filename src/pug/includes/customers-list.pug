@@ -74,22 +74,22 @@
         }
     ]
 
-table
+table.customer-table
     thead
         tr
-            th.customer-list__head-name Customer Name
-            th.customer-list__head-name Company 
-            th.customer-list__head-name Phone Number 
-            th.customer-list__head-name Email
-            th.customer-list__head-name Country 
-            th.customer-list__head-name Status
+            th.customer-table__head-name Customer Name
+            th.customer-table__head-name Company 
+            th.customer-table__head-name Phone Number 
+            th.customer-table__head-name Email
+            th.customer-table__head-name Country 
+            th.customer-table__head-name Status
     tbody.customers-list 
 
         each customer in customersList
             tr.customer 
-                td.customer__fullname= customer.firstName + ' ' + customer.lastName 
-                td.customer___company= customer.company 
-                td.customer__phone= customer.phoneNumber
-                td.customer___email= customer.email
-                td.customer___country= customer.country
-                td.customer___status= customer.status
+                td.customer__details= customer.firstName + ' ' + customer.lastName 
+                td.customer__details= customer.company 
+                td.customer__details= customer.phoneNumber
+                td.customer__details= customer.email
+                td.customer__details= customer.country
+                td= include includes/status-active
