@@ -17,22 +17,19 @@ html(lang="en")
                 div.title__flex-wrap
                     h1.sidemenu__title Dashboard 
                     p.sidemenu__ver v.01
-            include includes/nav-bar
+            include includes/navbar
             include includes/user
 
             
         main
             .content
                 header
-                    p.greeting Hello Evano,&#128075;&#127996;
+                    include includes/greeting
                 section 
-                    .customers
-                        .customers__head
-                            .customers__title-wrap
-                                h2.customers__title All Customers
-                                p.customers__subtitle Active Members
-                            .customers__searchbar-wrap
-                                input(type="text" placeholder="search").customers__searchbar
-                                svg.customers__searchbar-icon
-                                    use(href='./assets/icons.svg#icon-search')
+                    .content__container
+                        .content__head
+                            .content__title-wrap
+                                h2.content__title All Customers
+                                p.content__subtitle Active Members
+                            include includes/searchbar
                         include includes/customers-list

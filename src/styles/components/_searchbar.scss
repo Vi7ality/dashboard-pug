@@ -1,0 +1,25 @@
+.searchbar {
+  position: relative;
+}
+
+.searchbar__input {
+  width: 216px;
+  height: 38px;
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: $muted-background-color;
+}
+
+.searchbar__input::placeholder {
+  font-size: 12px;
+  color: $muted-text-color;
+}
+
+.searchbar__icon {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+}

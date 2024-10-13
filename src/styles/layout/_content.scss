@@ -3,7 +3,29 @@
   padding: 41px 95px 41px 71px;
 }
 
-.greeting {
-  font-weight: 500;
-  font-size: 24px;
+.content__container {
+  padding: 30px 40px 40px 38px;
+  border-radius: 30px;
+  background-color: $primary-white-color;
+  box-shadow: 0 10px 60px 0 $primary-shadow-color;
+}
+
+.content__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.content__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.content__subtitle {
+  color: $accent-text-color;
 }
