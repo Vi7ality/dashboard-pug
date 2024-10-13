@@ -92,4 +92,8 @@ table.customer-table
                 td.customer__details= customer.phoneNumber
                 td.customer__details= customer.email
                 td.customer__details= customer.country
-                td= include includes/status-active
+                td.customer__details
+                    if customer.status === 'Active'
+                        .status--active Active
+                    else
+                        .status--inactive Inactive

@@ -1,0 +1,25 @@
+.status--active {
+  font-weight: 500;
+  color: #008767;
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  background: rgba(22, 192, 152, 0.38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+}
+
+.status--inactive {
+  font-weight: 500;
+  color: #df0404;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+  background: #ffc5c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+}
