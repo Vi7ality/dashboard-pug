@@ -1,15 +1,19 @@
 {
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "concurrently": "^9.0.1",
     "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4"
   },
   "scripts": {
     "start": "parcel src/index.html",
+    "dev": "concurrently \"npm start\" \"npm run watch\"",
     "build:pug": "pug src/pug/index.pug --out src --pretty",
     "watch": "pug -w src/pug/index.pug --out src --pretty",
     "build": "parcel build src/index.html"
   },
   "dependencies": {
-    "modern-normalize": "^3.0.1"
+    "modern-normalize": "^3.0.1",
+    "scss": "^0.2.4"
   }
 }
