@@ -34,3 +34,9 @@
 .content__subtitle {
   color: $accent-text-color;
 }
+
+.content__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
