@@ -1,0 +1,22 @@
+.pagination__list {
+  display: flex;
+  gap: 12px;
+}
+
+.pagination__item,
+.pagination__item--active {
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 24px;
+}
+
+.pagination__item--active {
+  border: 1px solid $accent-background-color;
+  background: $accent-background-color;
+  color: $primary-white-color;
+}

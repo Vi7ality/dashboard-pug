@@ -23,9 +23,9 @@ html(lang="en")
             
         main
             .content
-                header
+                header.content__header
                     include includes/greeting
-                section 
+                section
                     .content__container
                         .content__head
                             .content__title-wrap
@@ -33,3 +33,7 @@ html(lang="en")
                                 p.content__subtitle Active Members
                             include includes/searchbar
                         include includes/customers-list
+                        include includes/pagination 
+                            
+
+                    

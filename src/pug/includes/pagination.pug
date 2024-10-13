@@ -1,0 +1,20 @@
+mixin pagination(currentPage, totalPages)
+  nav.pagination
+    ul.pagination__list
+      li.pagination__item
+        a(href=`?page=${currentPage - 1}`, class=currentPage === 1 ? 'disabled' : '') &lt;
+      each page in Array(totalPages).fill(0).map((_, i) => i + 1)
+        if page === currentPage
+          li.pagination__item--active
+            a(href=`?page=${page}`, class='active') #{page}
+        else if page <= 2 || page === totalPages || (page >= currentPage - 1 && page <= currentPage + 1)
+          li.pagination__item
+            a(href=`?page=${page}`) #{page}
+        else if page === 3 || page === currentPage + 2
+          li.pagination__item
+            span ...  
+      li.pagination__item
+        a(href=`?page=${currentPage + 1}`, class=currentPage === totalPages ? 'disabled' : '') &gt;
+
+
++pagination(1, 40)

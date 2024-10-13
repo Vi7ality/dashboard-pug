@@ -94,10 +94,10 @@
     </aside>
     <main>
       <div class="content">
-        <header>
+        <header class="content__header">
           <p class="greeting">Hello Evano &#128075;&#127996;</p>
         </header>
-        <section> 
+        <section>
           <div class="content__container">
             <div class="content__head">
               <div class="content__title-wrap">
@@ -205,6 +205,16 @@
                 </tr>
               </tbody>
             </table>
+                        <nav class="pagination">
+                          <ul class="pagination__list">
+                            <li class="pagination__item"><a class="disabled" href="?page=0">&lt;</a></li>
+                            <li class="pagination__item--active"><a class="active" href="?page=1">1</a></li>
+                            <li class="pagination__item"><a href="?page=2">2</a></li>
+                            <li class="pagination__item"><span>...  </span></li>
+                            <li class="pagination__item"><a href="?page=40">40</a></li>
+                            <li class="pagination__item"><a href="?page=2">&gt;</a></li>
+                          </ul>
+                        </nav>
           </div>
         </section>
       </div>
