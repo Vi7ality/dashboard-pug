@@ -5,7 +5,7 @@ mixin navLink(name, href, iconName, active=false)
                 .navbar__name-flexwrap
                     svg.navbar__icon
                         use(href=`./assets/icons.svg#${iconName}`)
-                    p.navbar__name--active= name
+                    p.navbar__name= name
                 svg.navbar__arrow-icon
                     use(href="./assets/icons.svg#icon-chevron-right")
 

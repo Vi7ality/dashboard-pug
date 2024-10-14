@@ -15,6 +15,17 @@
   padding: 11px;
   background-color: $accent-background-color;
   border-radius: 8px;
+
+  .navbar__name {
+    font-weight: 500;
+    color: $primary-white-color;
+  }
+
+  .navbar__arrow-icon {
+    width: 16px;
+    height: 16px;
+    color: $primary-white-color;
+  }
 }
 
 .navbar__link {
@@ -37,15 +48,11 @@
 
 .navbar__name {
   font-weight: 500;
-  color: #9197b3;
-}
-
-.navbar__name--active {
-  font-weight: 500;
-  color: $primary-white-color;
+  color: $nav-text-color;
 }
 
 .navbar__arrow-icon {
   width: 16px;
   height: 16px;
+  color: $nav-text-color;
 }
