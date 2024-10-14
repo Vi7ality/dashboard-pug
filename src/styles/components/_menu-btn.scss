@@ -1,0 +1,15 @@
+.menu-btn {
+  @include mq(tablet-max) {
+    border: none;
+    background: none;
+    margin-right: 10px;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.menu-btn__icon {
+  width: 32px;
+  height: 32px;
+}

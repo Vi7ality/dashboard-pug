@@ -1,12 +1,15 @@
 .content {
-  padding: 41px 95px 41px 71px;
+  padding: 41px 20px;
   @include mq(desktop) {
     margin-left: 306px;
+    padding: 41px 95px 41px 71px;
   }
 }
 
 .content__header {
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .content__container {
