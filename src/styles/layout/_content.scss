@@ -1,6 +1,8 @@
 .content {
-  margin-left: 306px;
   padding: 41px 95px 41px 71px;
+  @include mq(desktop) {
+    margin-left: 306px;
+  }
 }
 
 .content__header {
