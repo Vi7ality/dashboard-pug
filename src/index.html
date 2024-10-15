@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./styles/index.scss">
   </head>
   <body> 
-    <aside class="sidemenu">
+    <aside class="sidemenu js-menu-container">
+      <svg class="icon-close js-close-menu">
+        <use href="./assets/icons.svg#icon-close"></use>
+      </svg>
       <div class="sidemenu__title-wrap">
         <svg class="sidemenu__icon">
           <use href="./assets/icons.svg#icon-setting"></use>
@@ -95,7 +98,7 @@
     <main>
       <div class="content">
         <header class="content__header">
-          <button class="menu-btn">
+          <button class="menu-btn js-open-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="menu-btn__icon">
               <use href="./assets/icons.svg#icon-menu"></use>
             </svg>
@@ -227,5 +230,6 @@
         </section>
       </div>
     </main>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

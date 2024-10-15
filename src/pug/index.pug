@@ -11,7 +11,9 @@ html(lang="en")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css")
         link(rel="stylesheet" href="./styles/index.scss")
     body 
-        aside.sidemenu
+        aside.sidemenu.js-menu-container
+            svg.icon-close.js-close-menu
+                use(href="./assets/icons.svg#icon-close")
             .sidemenu__title-wrap
                 svg.sidemenu__icon
                     use(href="./assets/icons.svg#icon-setting")
@@ -24,7 +26,7 @@ html(lang="en")
         main
             .content
                 header.content__header
-                    button.menu-btn
+                    button.menu-btn.js-open-menu(aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu")
                         svg.menu-btn__icon
                             use(href="./assets/icons.svg#icon-menu")
                     include includes/greeting
@@ -40,5 +42,5 @@ html(lang="en")
                             include includes/data-counter
                             include includes/pagination 
                             
-
+        script(src="./js/mobile-menu.js" type="module")
                     
