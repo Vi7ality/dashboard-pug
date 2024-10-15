@@ -1,4 +1,5 @@
-.status--active {
+.status--active,
+.status--inactive {
   font-weight: 500;
   color: #008767;
   border: 1px solid #00b087;
@@ -9,17 +10,15 @@
   align-items: center;
   width: 80px;
   height: 29px;
+
+  @include mq(mobile-only) {
+    font-size: 10px;
+    width: 50px;
+  }
 }
 
 .status--inactive {
-  font-weight: 500;
   color: #df0404;
   border: 1px solid #df0404;
-  border-radius: 4px;
   background: #ffc5c5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 29px;
 }

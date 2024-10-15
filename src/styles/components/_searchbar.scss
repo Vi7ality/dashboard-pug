@@ -9,6 +9,10 @@
   border: none;
   border-radius: 10px;
   background-color: $muted-background-color;
+
+  @include mq(mobile-only) {
+    width: 150px;
+  }
 }
 
 .searchbar__input::placeholder {

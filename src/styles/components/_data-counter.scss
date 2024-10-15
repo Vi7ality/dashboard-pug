@@ -1,4 +1,8 @@
 .data-counter {
   font-weight: 500;
   color: $muted-text-color;
+
+  @include mq(mobile-only) {
+    font-size: 12px;
+  }
 }

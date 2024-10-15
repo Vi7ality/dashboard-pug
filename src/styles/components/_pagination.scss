@@ -1,6 +1,10 @@
 .pagination__list {
   display: flex;
   gap: 12px;
+
+  @include mq(mobile-only) {
+    gap: 8px;
+  }
 }
 
 .pagination__item,

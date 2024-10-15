@@ -1,6 +1,10 @@
 .customer-table {
   width: 100%;
   border-collapse: collapse;
+
+  @include mq(mobile-only) {
+    font-size: 12px;
+  }
 }
 
 .customer-table__head {
